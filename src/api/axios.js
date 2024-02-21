@@ -1,9 +1,6 @@
 import axios from "axios";
-import raw from "../TMDB_API/api.txt"
 
-let tmdb_key = fetch(raw).then(r => r.text()).then(text => {
- console.log('text decoded:', text);
-});
+const tmdb_key = process.env.REACT_APP_TMDB_APP_KEY 
 
 
 const instance = axios.create({
