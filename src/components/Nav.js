@@ -23,11 +23,9 @@ const Nav = () => {
 
 
   return (
-    <NavWrapper show ={show}>
+    <NavWrapper $show ={show}>
       <Logo>
-        <img alt='Disney Plus Logo'
-             src='/images/logo.svg'
-             onClick={() => (window.location.href = "/")}
+        <img alt='Disney Plus Logo' src='/images/logo.svg' onClick={() => (window.location.href = "/")}
         />
       </Logo>
     </NavWrapper>
