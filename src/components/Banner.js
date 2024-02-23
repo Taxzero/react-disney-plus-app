@@ -9,7 +9,7 @@ const Banner = () => {
   useEffect(() => {
     fetchData();
   }, [])
-  
+       
   const fetchData = async() => {
     //현재 상영중인 영화 정보를 가져오기(여러영화)
     const reseponse = await axios.get(requests.fetchNowPlaying);
@@ -22,7 +22,7 @@ const Banner = () => {
     const {data:movieDetail} = await axios.get(`movie/${movieId}`, {params: {append_to_response: "videos"}});
     setMovie(movieDetail);
   }
-
+      
   return (
     <div>Banner</div>
   )

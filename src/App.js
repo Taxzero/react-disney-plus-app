@@ -9,12 +9,12 @@ function App() {
       <Nav />
       <Banner />
     </Container>
-  );
+  );   
 }
 
-export default App;
-
-
+export default App;  
+ 
+   
 
 const Container = styled.main`
   position: relative;
