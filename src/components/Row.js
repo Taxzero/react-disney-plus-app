@@ -14,7 +14,7 @@ const Row = ({title, id, fetchUrl}) => {
     fetchMovieData();
   }, [fetchMovieData])
 
-
+    
 
   return (
     <div>
