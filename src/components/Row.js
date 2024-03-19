@@ -31,7 +31,7 @@ const Row = ({title, id, fetchUrl}) => {
           <span className='arrow'
           onClick={()=>{document.getElementById(id).scrollLeft -= window.innerWidth -80
           }}>
-             {'<'}
+            {'<'}
           </span>
         </div>
         <div id ={id} className='row__posters'>
@@ -53,7 +53,12 @@ const Row = ({title, id, fetchUrl}) => {
           </span>
         </div>
       </div>
-      {setModalOpen && <MovieModal {...setMovieSelected} setModalOpen={setModalOpen}/>}
+      {modalOpen &&
+        <MovieModal
+          {...movieSelected}
+          setModalOpen={setModalOpen}
+        />
+      }
     </div>
   )
 }
